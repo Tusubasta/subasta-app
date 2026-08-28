@@ -14,8 +14,7 @@ const firebaseConfig = {
   measurementId: "G-8T39WT4WHN"
 };
 
-const app = initializeApp(fireb
-aseConfig);
+const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
 // Mismo contrato que window.storage: get/set por clave, con "shared" implícito
