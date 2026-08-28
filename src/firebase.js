@@ -4,16 +4,18 @@ import { getDatabase, ref, get, set } from "firebase/database";
 // Pegá acá los valores que te da Firebase al crear el proyecto
 // (Configuración del proyecto → tus apps → Config).
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_PROYECTO.firebaseapp.com",
-  databaseURL: "https://TU_PROYECTO-default-rtdb.firebaseio.com",
-  projectId: "TU_PROYECTO",
-  storageBucket: "TU_PROYECTO.appspot.com",
-  messagingSenderId: "000000000000",
-  appId: "TU_APP_ID",
+  apiKey: "AIzaSyD8YUvjJfGTMFXJ9OgUhUl8FoBgMRHIaYU",
+  authDomain: "lasubastaa-4525f.firebaseapp.com",
+  projectId: "lasubastaa-4525f",
+  storageBucket: "lasubastaa-4525f.firebasestorage.app",
+  databaseURL: "https://lasubastaa-4525f-default-rtdb.firebaseio.com/",
+  messagingSenderId: "388157788700",
+  appId: "1:388157788700:web:773c616e4b7c5d58f4c5d9",
+  measurementId: "G-8T39WT4WHN"
 };
 
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(fireb
+aseConfig);
 const db = getDatabase(app);
 
 // Mismo contrato que window.storage: get/set por clave, con "shared" implícito
