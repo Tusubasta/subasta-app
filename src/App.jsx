@@ -1104,6 +1104,12 @@ JSON: {"campeon":"nombre exacto del campeón","conclusion":"3 o 4 oraciones: cor
 
         {/* ── SALA (anfitrión) ── */}
         {fase === "sala" ? (
+          invitado ? (
+            <section className="sb-in">
+              <Eyebrow>Sala {sala}</Eyebrow>
+              <Espera texto={`Ya te uniste como ${nombres[1]}. Esperando a que ${nombres[0] || "el anfitrión"} termine de configurar la partida…`} />
+            </section>
+          ) : (
           <section className="sb-in">
             {online ? (
               <div
@@ -1168,6 +1174,7 @@ JSON: {"campeon":"nombre exacto del campeón","conclusion":"3 o 4 oraciones: cor
               </Boton>
             </div>
           </section>
+          )
         ) : null}
 
         {/* ── TEMÁTICA ── */}
